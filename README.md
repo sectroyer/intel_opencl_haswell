@@ -23,7 +23,7 @@ x11-libs/libva-2.7.1:0/2::gentoo  USE="X drm utils -opengl -vdpau -wayland" ABI_
 It is important to enable intel video cards and (for `sys_analyzer_linux.py` script) utils use flag.
 
 #### Step 2 (kernel):
-Unpack MediaServerStudioEssentials2017.tar.gz and from it you need SDK2017Production16.5.tar.gz. When you unpack this one you will find intel-opencl-16.5-installation.pdf. You can follow this procedure with one important distinction. Do NOT patch your kernel with `/opt/intel/opencl/kernel-4.4-xcode.patch`. This one is for Android, use `/opt/intel/opencl/kernel-4.4.patch` instead. Of course you can try porting those patches to newer kernel however easiest way is to simply switch to 4.4
+Unpack MediaServerStudioEssentials2017.tar.gz and from it you need SDK2017Production16.5.tar.gz. If you can't find MediaServerStudioEssentials2017.tar.gz you can usee SDK2017Production16.5.tar.xz from this repo which has all the necessary files. When you unpack this one you will find intel-opencl-16.5-installation.pdf. You can follow this procedure with one important distinction. Do NOT patch your kernel with `/opt/intel/opencl/kernel-4.4-xcode.patch`. This one is for Android, use `/opt/intel/opencl/kernel-4.4.patch` instead. Of course you can try porting those patches to newer kernel however easiest way is to simply switch to 4.4
 #### Step 2 (intel-neo):
 
 If you simply install intel-neo `sys_analyzer_linux.py` should output:
