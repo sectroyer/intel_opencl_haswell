@@ -1,6 +1,6 @@
 # intel_opencl_haswell
 ## How to install OpenCL on older Intel graphic cards (Haswell/Ivy Bridge)
-Since I had some issues with enabling OpenCL support on Haswell and whole processs wasn't correctly described anywhere I have decided to put this quick tutorial for future references.
+Since I had some issues with enabling OpenCL support on Haswell and whole process wasn't correctly described anywhere I have decided to put this quick tutorial for future references.
 ### Prerequisites:
 In order to even you have to have drivers installed and confirm that devices is visible by running:
 ```
@@ -12,7 +12,7 @@ If you don't get something simillar and drivers are correctly installed. Please 
 I will be describing the process for Gentoo Linux however most of it can be adopted to any other distro. 
 ### Installation:
 If you check [Gentoo Intel Wiki](https://wiki.gentoo.org/wiki/Intel) you can see that OpenCL is available from Ivy Bridge. However checking [Gentoo OpenCL Wiki](https://wiki.gentoo.org/wiki/OpenCL#Intel_-_GPU) we will learn that in order to enable OpenCL we have to install package dev-libs/intel-neo however:
-`Beginning with the Broadwell processor series, Intel Graphics Compute Runtime for OpenCL is provided by dev-libs/intel-neo`. This statement isn't completely correct. It should be read as "begining with Broadwell it is ENOUGH to install dev-libs/intel-neo" on Haswell we still need it. First of all please `sys_analyzer_linux.py` from this repo. I made small fix that was required on my system and might also help others (script didn't handle well other OpenCL vendors...). Of course there is no need if original one works fine.
+`Beginning with the Broadwell processor series, Intel Graphics Compute Runtime for OpenCL is provided by dev-libs/intel-neo`. This statement isn't completely correct. It should be read as "begining with Broadwell it is ENOUGH to install dev-libs/intel-neo" on Haswell we still need it. First of all please download `sys_analyzer_linux.py` from this repo. I made small fix that was required on my system and might also help others (script didn't handle well other OpenCL vendors...). Of course there is no need if original one works fine.
 #### Step 1 (libav):
 First you have to install libav with correct flags:
 
