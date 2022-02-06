@@ -1,4 +1,4 @@
-# intel_opencl_haswell
+# intel\_opencl\_haswell
 ## How to install OpenCL on older Intel graphic cards (Haswell/Ivy Bridge)
 Since I had some issues with enabling OpenCL support on Haswell and whole process wasn't correctly described anywhere I have decided to put this quick tutorial for future references.
 ### Prerequisites:
@@ -42,6 +42,6 @@ After that OpenCL should work on Intel GPU without any issues.
 
 [Gentoo OpenCL Wiki](https://wiki.gentoo.org/wiki/OpenCL#Intel_-_GPU)
 
-[Intel MediaSDK mini-walkthrough]https://blogs.gentoo.org/lu_zero/2016/10/31/intel-mediasdk-mini-walkthrough/
+[Intel MediaSDK mini-walkthrough](https://blogs.gentoo.org/lu_zero/2016/10/31/intel-mediasdk-mini-walkthrough/)
 
 [install-intel-opencl-drivers-for-linux.sh](https://gist.github.com/cmey/a2b2223e7947b62bd94d405e290c9293)
