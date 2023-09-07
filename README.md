@@ -7,12 +7,12 @@ In order to even you have to have drivers installed and confirm that devices is 
 lspci | grep -i vga
 00:02.0 VGA compatible controller: Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor Integrated Graphics Controller (rev 06)
 ```
-If you don't get something simillar and drivers are correctly installed. Please ensure that integrated gpu is enabled in BIOS and if you are not connecting this grahpic card as your main display you have to connect to it any monitor or hdmi emulator (which can be bought for 2-3 euro). 
+If you don't get something similar and drivers are correctly installed. Please ensure that integrated gpu is enabled in BIOS and if you are not connecting this grahpic card as your main display you have to connect to it any monitor or hdmi emulator (which can be bought for 2-3 euro). 
 
 I will be describing the process for Gentoo Linux however most of it can be adopted to any other distro. 
 ### Installation:
 If you check [Gentoo Intel Wiki](https://wiki.gentoo.org/wiki/Intel) you can see that OpenCL is available from Ivy Bridge. However checking [Gentoo OpenCL Wiki](https://wiki.gentoo.org/wiki/OpenCL#Intel_-_GPU) we will learn that in order to enable OpenCL we have to install package dev-libs/intel-neo however:
-`Beginning with the Broadwell processor series, Intel Graphics Compute Runtime for OpenCL is provided by dev-libs/intel-neo`. This statement isn't completely correct. It should be read as "begining with Broadwell it is ENOUGH to install dev-libs/intel-neo" on Haswell we still need it. First of all please download `sys_analyzer_linux.py` from this repo. I made small fix that was required on my system and might also help others (script didn't handle well other OpenCL vendors...). Of course there is no need if original one works fine.
+`Beginning with the Broadwell processor series, Intel Graphics Compute Runtime for OpenCL is provided by dev-libs/intel-neo`. This statement isn't completely correct. It should be read as "beginning with Broadwell it is ENOUGH to install dev-libs/intel-neo" on Haswell we still need it. First of all please download `sys_analyzer_linux.py` from this repo. I made small fix that was required on my system and might also help others (script didn't handle well other OpenCL vendors...). Of course there is no need if original one works fine.
 #### Step 1 (libav):
 First you have to install libav with correct flags:
 
